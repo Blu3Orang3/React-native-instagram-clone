@@ -1,23 +1,37 @@
-import { StyleSheet } from "react-native";
-import colors from "../../theme/colors";
-import fonts from "../../theme/fonts";
+import {StyleSheet} from 'react-native';
+import colors from '../../theme/colors';
+import fonts from '../../theme/fonts';
 
 export default StyleSheet.create({
+  comment: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
   icon: {
     marginHorizontal: 5,
+    fontSize: 18,
   },
   commentText: {
-    flex: 1,
     color: colors.black,
     lineHeight: 18,
   },
   bold: {
     fontWeight: fonts.weight.bold,
   },
-  comment: {
+  avatar: {
+    width: 42,
+    aspectRatio: 1,
+    borderRadius: 25,
+    marginRight: 8,
+  },
+  middleColumn: {
+    flex: 1,
+  },
+  footer: {
     flexDirection: 'row',
-    alignItems: 'center',
+    marginBottom: 10,
+  },
+  footerText: {
+    marginRight: 10,
   },
 });
-
-
